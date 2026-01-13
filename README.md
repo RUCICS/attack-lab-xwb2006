@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ak7ck2gU)
 # 栈溢出攻击实验
 
 > "Exploiting is an art, but understanding the principles behind it is science." —— Anon
@@ -84,7 +85,7 @@ cd attacklab
      2) 这里提供一种将保存二进制流文件的方法，你需要使用python去运行下面的代码(注意 这只是一种写法，你可以按照自己的习惯去写)
 ```python
 # 比如你发现你可以使用'A'去覆盖8个字节，然后跳转到0x114514地址就可以完成任务，那么你可以这么写你的payload并保存
-padding = b"A" * 16
+padding = b"A" * 16  # 相当于是 0xAA *8
 func1_address = b"\x14\x45\x11\x00\x00\x00\x00\x00"  # 小端地址
 payload = padding+ func1_addr ess
 # Write the payload to a file
